@@ -1,7 +1,9 @@
 const automl = require('@google-cloud/automl');
 const express = require('express');
+var cors = require('cors')
 const app = express();
 
+app.use(cors())
 /**
  * Demonstrates using the AutoML client to request prediction from
  * automl tables using csv.
